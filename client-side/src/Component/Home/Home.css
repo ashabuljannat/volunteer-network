@@ -1,0 +1,41 @@
+.ui-card{
+	overflow: hidden;
+	transition: all 0.3s ease-out;
+    background:radial-gradient(#111 50%, #000 100%);
+}
+.ui-card img{
+	transform: scale(1.2);
+	transition: all 0.3s ease-out;
+}
+.ui-card:hover img{
+	transform: scale(1.1) translateY(-10px); 
+	opacity: 0.8
+}
+.ui-card .description{
+	position: absolute;
+	padding: 15px;
+	text-align: center;
+	color: #fff;
+}
+.ui-card .description h3{
+	font-weight: 700;
+	font-size: 32px;
+	transform: translateY(-20px);
+	opacity: 0;
+	transition: all 0.3s ease-out;
+}
+.ui-card .description button{
+	display: inline-block;
+	text-decoration: none;
+	transform: translateY(-30px);
+	opacity: 0;
+	transition: all 0.4s ease-out ;
+}
+.ui-card:hover .description h3{
+	opacity: 1;
+	transform: translateY(0px);
+}
+.ui-card:hover .description button{
+	opacity: 1;
+	transform: translateY(0px);
+}
